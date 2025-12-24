@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MD. Abdul Hannan Mir</span>
+            </div>
+            <ul class="nav-menu nav-menu--pill" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-dropdown">
+                    <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Skills ▾</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+            <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation" aria-controls="navMenu" aria-expanded="false" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div id="scrollProgress" class="scroll-progress"></div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="hero-title" data-text="Cybersecurity Specialist">Cybersecurity Specialist</h1>
+            </div>
+            <p class="hero-subtitle">Ethical Hacker | Penetration Tester</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#portfolio" class="btn btn-secondary">View Work</a>
+            </div>
+        </div>
+        <div class="particles" id="particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="assets/image/nishan.png" alt="Profile" class="profile-img">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Hi, I'm Hannan, a 21-year-old located in Mymensingh, Bangladesh. My passion has always been Cyber Security. I want to ensure that security is our top priority in our rapidly developing world and contribute to creating a more secure environment. 
+</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Vulnerabilities Found</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="project-icon project-icon--large">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                <circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="20" y1="20" x2="16" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M8.2 9.2c.3-.9 1.2-1.6 2.3-1.6.9 0 1.7.4 2.1 1.1" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13a1 1 0 100 2 1 1 0 000-2z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Penetration Testing</h3>
+                        <p>Simulated attacks against networks and systems to discover and validate security weaknesses and provide actionable remediation.</p>
+                        <div class="portfolio-tags">
+                            <span>Nmap</span>
+                            <span>Metasploit</span>
+                            <span>Nessus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="project-icon project-icon--large">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                <rect x="3" y="11" width="18" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M7 11V8a5 5 0 0110 0v3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Web Application Pentesting</h3>
+                        <p>Identified and exploited OWASP Top 10 vulnerabilities in client web applications.</p>
+                        <div class="portfolio-tags">
+                            <span>Burp Suite</span>
+                            <span>OWASP ZAP</span>
+                            <span>SQLMap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="project-icon project-icon--large">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                <path d="M4 15c1.5-3 4.5-5 8-5s6.5 2 8 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="9" y="7" width="6" height="6" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Malware Detection & Analysis</h3>
+                        <p>Built isolated environments for safe malware analysis</p>
+                        <div class="portfolio-tags">
+                            <span>IDA Pro</span>
+                            <span>Ghidra</span>
+                            <span>REMnux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="project-icon project-icon--large">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M22 12h-2M4 12H2M12 4v-2M12 22v-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                   <div class="portfolio-content">
+                        <h3>Network & Server Security</h3>
+                        <p>Comprehensive security assessment for enterprise infrastructure identifying critical vulnerabilities.</p>
+                        <div class="portfolio-tags">
+                            <span>Nmap</span>
+                            <span>Wireshark</span>
+                            <span>Metasploit</span>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <span>Penetration Testing</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Network Security</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Web Application Security</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Malware Removal</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">Metasploit</div>
+                        <div class="tool-item">Burp Suite</div>
+                        <div class="tool-item">Nmap</div>
+                        <div class="tool-item">Wireshark</div>
+                        <div class="tool-item">Kali Linux</div>
+                        <div class="tool-item">OWASP ZAP</div>
+                        <div class="tool-item">Nikto</div>
+                        <div class="tool-item">SQLMap</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Work Showcase (added after Skills) -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">portfolio</h2>
+            <p class="section-subtitle">Selected projects and hands-on labs demonstrating penetration testing, malware analysis and defensive tooling.</p>
+            <div class="showcase-grid showcase-grid--large">
+                <article class="showcase-item showcase-item--large">
+                    <div class="showcase-image">
+                        <img src="assets/image/work1.png" alt="Project 1">
+                        <div class="showcase-overlay"><a href="#" class="btn btn-secondary">View</a></div>
+                    </div>
+                    <h3>Internal Network Assessment</h3>
+                    <p>Discovery and exploitation of weak SMB services in a corporate lab.</p>
+                </article>
+
+                <article class="showcase-item showcase-item--large">
+                    <div class="showcase-image">
+                        <img src="assets/image/work2.png" alt="Project 2">
+                        <div class="showcase-overlay"><a href="#" class="btn btn-secondary">View</a></div>
+                    </div>
+                    <h3>Web App OWASP Hunt</h3>
+                    <p>Comprehensive OWASP Top 10 testing and automated reporting.</p>
+                </article>
+
+                <article class="showcase-item showcase-item--large">
+                    <div class="showcase-image">
+                        <img src="assets/image/work3.png" alt="Project 3">
+                        <div class="showcase-overlay"><a href="#" class="btn btn-secondary">View</a></div>
+                    </div>
+                    <h3>Malware Analysis Lab</h3>
+                    <p>Isolated analysis using REMnux and instrumented VMs.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+        <!-- Achievements Section -->
+        <!-- Example: inline image you can customize
+            <img src="image/certificate.png" alt="CCEP Certificate" style="width:var(--achievement-icon-size);height:var(--achievement-icon-size);" />
+            Change the value of --achievement-icon-size in the CSS to resize globally.
+        -->
+        <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <img src="assets/image/Flag.png" alt="CTF Trophy" class="achievement-img achievement-ctf">
+                    </div>
+                    <h3>Capture The Flag (CTF)</h3>
+                    <p>Completed Top CTF challenges & active participant in HackTheBox and TryHackMe</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <img src="assets/image/bug.png" alt="Briefcase" class="achievement-img achievement-bugbounty">
+                    </div>
+                    <h3>Bug Bounty Hunter</h3>
+                    <p>Discovered critical vulnerabilities for major tech companies</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <img src="assets/image/cyber.png" alt="Books" class="achievement-img" style="width: 100px; height: 100px;">
+                    </div>
+                    <h3>Security Enthusiast</h3>
+                    <p>Experimenting with cybersecurity tools and emerging threat landscapes</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <img src="assets/image/udemy (2).png" alt="Python Badge" class="achievement-img achievement-udemy">
+                    </div>
+                    <h3>Python for Hackers</h3>
+                    <p>CERTIFICATE OF COMPLETION
+                                  Introduction to Python for Hackin</p>
+                </div>
+                <div class="achievement-item achievement-ethical">
+                    <div class="achievement-icon">
+                        <img src="assets/image/cisco.png" alt="CCEP Certificate" class="achievement-img" style="width: 110px; height:105px;" />
+                    </div>
+                    <h3>Ethical Hacker</h3>
+                    <p>Ethical Hacking Certification from Cisco Networking Academy</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <img src="assets/image/certificate.png" alt="Pentest" class="achievement-img achievement-cert">
+                    </div>
+                    <h3>CCEP Certified</h3>
+                    <p>Developing learners with industry-ready cybersecurity knowledge, skills, and ethical practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Interested in collaboration or have a security project? Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="contact-svg">
+                                    <path fill="currentColor" d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hannanmir.me@gmail.com</p>
+                            </div>
+                        </div>
+                       
+                        <div class="contact-item">
+                            <span class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="contact-svg">
+                                    <path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+                                </svg>
+                            </span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Mymensingh, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hannan's Portfolio</h3>
+                    <p>Protecting digital assets through expertise and innovation.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/hannan0x0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BfYKABdbWTYOaYV940qhFnQ%3D%3D" class="social-link">LinkedIn</a>
+                        <a href="https://www.facebook.com/hannan0x0" class="social-link">Facebook</a>
+                        <a href="https://t.me/hannan0x0" class="social-link">Telegram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#skills">Penetration Testing</a></li>
+                        <li><a href="#skills">Web Application Security</a></li>
+                        <li><a href="#">Malware Removal</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal (hidden, shown after message sent) -->
+    <div id="successModal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-icon-wrapper">
+                    <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" fill="currentColor"/>
+                        <path d="M16 9l-5 6-3-3" fill="none" stroke="#0b6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 id="modalTitle">Message Sent</h3>
+                <p>Thanks — your message has been sent. I'll get back to you shortly.</p>
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="modalOk">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Three.js and Vanta.js for animated hero background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+    <script>
+    window.addEventListener('load', function () {
+        try {
+            if (typeof VANTA !== 'undefined' && document.querySelector('#home')) {
+                VANTA.NET({
+                    el: '#home',
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00,
+                    scaleMobile: 1.00,
+                    color: 0x6c00d4
+                });
+            }
+        } catch (err) {
+            console.warn('VANTA init failed:', err);
+        }
+    });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
